@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: Arial;
+  }
+  /* Header style */
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 51px;
+    background-color: rgb(43 25 95);
+    color: white;
+  }
+.header .header__navbar-title{
+  margin-right: auto;
+  width: 300px;
+}
+.header__navbar-exit{
+  padding: 15px;
+  background-color: #12004b;
+  font-size: 20px;
+  height: inherit;
+ 
+}
+.header__navbar-logo img{
+  
+  height: inherit;
+  width: 51px;
+}
+.header .rightside{
+  flex-wrap: wrap;
+  padding: 0;
+}
+.rightside .header__navbar-icon-question{
+  font-size: 25px;
+  margin: 10px;
+
+}
+.rightside .header__navbar-icon-setting{
+  font-size: 20px;
+  margin: 10px;
+}
+.rightside .header__navbar-icon-apps{
+  font-size: 20px;
+  margin: 10px;
+}
+.rightside .header__navbar-icon-person{
+  font-size: 20px;
+  margin: 10px;
+}
+.rightside .header__navbar-icon-task{
+  background-color: #fbcb00;
+  font-size: 20px;
+  padding: 15px;
+  color: #12004b;
+}
