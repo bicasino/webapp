@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+}
+:root{
+  --first-color:rgb(43 25 95);
+  --second-color: #f3f3f3;
+  --third-color: #dcdcdc;
+  --white-color: white;
+  --yellow-color: #fbcb00;
+}
+body {
+  font-family: sans-serif;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+}
+/* Header Styles */
+.top-bar{
+  background-color: rgb(43 25 95);
+  height: 51px;
+  color: var(--white-color);
+}
+.fa-solid fa-xmark{
+
+}
+.top-bar__img{
+  height: 51px;
+}
+.top-bar__left{
+  height: 51px;
+  display: flex;
+  align-items: center;
+}
+.top-bar__left a{
+  background-color: transparent;
+  margin-right: 18px;
+  margin-left: 6px;
+}
+.top-bar__list-icon{
+  height: 51px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.top-bar__list-icon a{
+  background-color: var(--first-color);
+  margin: 0 15px;
+}
+.top-bar__list-icon a :hover{
+  background-color: var(--yellow-color);
+}
+/* .top-bar__list-icon a :hover fa-solid{
+  background-color: #fbcb00;
+} */
+a{
+  color: white;
+  font-size: 20px;
+}
+aside {
+  float: left;
+  width: 280px;
+  height: 100vh;
+  background: var(--second-color);
+}
+aside ul {
+  padding-left: 0rem;
+}
+ul, li{
+  list-style: none;
+}
+hr{
+  margin: 0;
+}
+.menu-search{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-search div:nth-child(0){
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-search input:nth-child(1){
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-title{
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--third-color);
+  padding: 10px 0 10px 5px;
+}
+.menu-management{
+  display: flex;
+  background-color: var(--second-color);
+  padding: 10px 0 10px 5px;
+}
+.menu-management div:nth-child(1) {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-management div:nth-child(2) {
+  
+  width: 65%;
+}
+.menu-management div:nth-child(3) {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End aside */
+article {
+  float: left;
+  padding: 20px;
+  width: calc(100vw - 250px);
+  background-color: var(--white-color);
+  height: 100vh; 
+}
