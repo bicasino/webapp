@@ -11,6 +11,7 @@
   --third-color: #dcdcdc;
   --white-color: white;
   --yellow-color: #fbcb00;
+  --icon-color: #12004b;
 }
 body {
   font-family: sans-serif;
@@ -32,21 +33,45 @@ body {
   height: 51px;
   color: var(--white-color);
 }
-.fa-solid fa-xmark{
-
+.top-bar-xmark{
+  height: 51px;
+  width: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--icon-color);
+  text-decoration: none;
+}
+/* .top-bar__list-icon li{
+  background-color: var(--first-color);
+  margin: 0 10px;
+} */
+.top-bar-icon-right{
+  height: 51px;
+  width: 51px;
+  display: flex;
+  align-items: center;
+}
+.top-bar-calendar{
+  height: 51px;
+  width: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-color);
+}
+.top-bar-calendar i{
+  color: var(--icon-color);
 }
 .top-bar__img{
   height: 51px;
 }
 .top-bar__left{
-  height: 51px;
   display: flex;
   align-items: center;
 }
-.top-bar__left a{
-  background-color: transparent;
-  margin-right: 18px;
-  margin-left: 6px;
+.col{
+  padding: 0;
 }
 .top-bar__list-icon{
   height: 51px;
@@ -54,20 +79,22 @@ body {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+
 }
-.top-bar__list-icon a{
+/* .top-bar__list-icon li{
   background-color: var(--first-color);
-  margin: 0 15px;
-}
-.top-bar__list-icon a :hover{
+  margin: 0 10px;
+
+} */
+/* .top-bar__list-icon a :hover{
   background-color: var(--yellow-color);
-}
+} */
 /* .top-bar__list-icon a :hover fa-solid{
   background-color: #fbcb00;
 } */
 a{
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 aside {
   float: left;
