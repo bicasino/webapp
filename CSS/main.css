@@ -363,12 +363,13 @@ article{
   width: 30px;
   margin: 10px;
   background-color: var(--second-color);
-  border: none;
-  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .table-btn_icon i{
-  margin: 6px;
   color: var(--icon-color);
+  /* border: thin solid red; */
 }
 .table{
   cursor: pointer;
