@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hệ thống quản lý người học</title>
-  
   <script src="https://kit.fontawesome.com/3c44c51b1b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +52,7 @@
       <input type="search" placeholder="Tìm kiếm chức năng"></input>
     </div>
   </div>
-    <ul class="menu-wrapper">
+    <div class="menu-wrapper">
       <li class="menu-items">
         <ul> 
           <div class="menu-title">Mục yêu thích</div>
@@ -76,35 +75,28 @@
             <div class="hover"><i class="fa-solid fa-user-group"></i></div>
             <div> Quản lý người học</div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
-            <!-- <ul>
-              <li>Hồ sơ người học</li>
-              <li> QL điểm rèn luyện
-                <ul>
-                  <li>Thiết lập ĐK phân loại</li>
-                  <li>DS thí sinh nộp hồ sơ</li>
-                  <li>Quản lý điểm rèn luyện</li>
-                </ul>
-              </li>
-              <li>Biên chế lớp học</li>
-              <li>Quản lý nội, ngoại trú</li>
-            </ul>
-          </li> -->
-          <li class="menu-management">
+          <li class="menu-management dropdown">
             <div class="hover"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
             <div> Hồ sơ người học </div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
-          <li class="menu-management">
+          <li class="menu-management dropdown">
             <div class="hover"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
-            <div> QL điểm rèn luyện </div>
+            <div class="dropdown-btn">
+              QL điểm rèn luyện
+              <ul class="sidebar-dropdown">
+                <li>Thiết lập ĐK phân loại</li>
+                <li>DS thí sinh nộp hồ sơ</li>
+                <li>Quản lý điểm rèn luyện</li>
+              </ul></div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
-          <li class="menu-management">
+          <li class="menu-management dropdown">
             <div class="hover"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
             <div> Biên chế lớp HC </div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
-          <li class="menu-management">
+          <li class="menu-management dropdown">
             <div class="hover"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
             <div> Quản lý nội, ngoại trú </div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
@@ -126,9 +118,10 @@
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
           <hr>
+          </div>
         </ul>
       </li>
-    </ul>
+    </>
   </section>
 </aside>
 <!-- Table Content -->
@@ -189,6 +182,7 @@
   <table class="table table-hover">
     <thead class="table-col">
       <tr>
+        <!-- <input class="form-check-input" type="checkbox"> -->
         <th scope="col">Mã Nhập Học <i class="fa-solid fa-sort"></i></th>
         <th scope="col">H/thức tuyển sinh<i class="fa-solid fa-sort"></i></th>
         <th scope="col">ĐT Đào tạo<i class="fa-solid fa-sort"></i></th>
@@ -198,8 +192,72 @@
       </tr>
     </thead>
     <tbody class="table-row">
-      <tr">
+      <tr>
+        <th class="color" scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th class="color" scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th class="color" scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
         <th scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th class="color" scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th class="red"scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th scope="row">1810251</th>
+        <td>Thi tuyển</td>
+        <td>Nhu cầu xã hội</td>
+        <td>Lê Thị Hải Yến</td>
+        <td>05/11/2000</td>
+        <td>187762773</td>
+      </tr>
+      <tr>
+        <th class="green" scope="row">1810251</th>
         <td>Thi tuyển</td>
         <td>Nhu cầu xã hội</td>
         <td>Lê Thị Hải Yến</td>
@@ -237,79 +295,7 @@
         <td>Lê Thị Hải Yến</td>
         <td>05/11/2000</td>
         <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
-      <tr>
-        <th scope="row">1810251</th>
-        <td>Thi tuyển</td>
-        <td>Nhu cầu xã hội</td>
-        <td>Lê Thị Hải Yến</td>
-        <td>05/11/2000</td>
-        <td>187762773</td>
-      </tr>
+      </tr
     </tbody>
   </table>
 </div>
