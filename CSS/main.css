@@ -123,6 +123,7 @@ aside {
 }
 aside ul {
   padding-left: 0rem;
+  margin-bottom: 0rem;
 }
 ul,
 li {
@@ -171,6 +172,7 @@ hr {
   font-weight: bold;
   line-height: 50px;
   cursor: pointer;
+
 }
 .menu-management .hover {
   color: var(--icon-color);
@@ -371,13 +373,13 @@ article {
 /* Scroll bar Table */
 
 /* Dropdown List */
-.dropdown:hover .sidebar-dropdown{
+.dropdown:active .sidebar-dropdown{
   display: block;
 }
 .sidebar-dropdown{
   display: none;
   font-weight: lighter;
 }
-.dropdown .hover i{
+.hidden .hover i{
   display: none;
 }
