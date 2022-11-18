@@ -52,13 +52,20 @@
         display: block;
     }
     .table-scroll{
-        width: 100vw;
+        width: 99vw;
         overflow: scroll;
     }
     .table{
        margin: 0;
     }
-  }
+    #table-respon{
+        display: none;
+        font-size: smaller;
+    }
+    #table-respon thead{
+        font-size: smaller;
+    }
+}
   
   /* Tablet Styles */
   @media only screen and (min-width: 577px) and (max-width: 991px) {
