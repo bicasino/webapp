@@ -1,8 +1,8 @@
 /* Mobile Styles */
 @media only screen and (max-width: 576px) {
-    header{
+        header{
     height: auto;
-    width: 100%;
+    width: 100vw;
     }
     header .top-bar-xmark{
 
@@ -26,14 +26,10 @@
         color: var(--white-color);
     }
     aside{
-        /* height: 100vh; */
         width: 100%;
     }
     aside, i{
         display: none;
-    }
-    .search-box input{
-        width: 80vw;
     }
     .search-sidebar{
         margin: 0 10px 0 10px;
@@ -43,22 +39,17 @@
     }
     .table-title{
         display: block;
+        padding: 10px;
+        margin: 0;
     }
     .table-search{
-        width: 90vw;
+        width: 95vw;
     }
-    .table-btn_left{
-        width: 100px;
-        
-    }
-    .table-btn_left li{
-        font-size: 15px;
+    .text-icon{
+        display: none;
     }
     .table-btn{
         display: block;
-    }
-    .table-btn_right div{
-        justify-content: flex-start;
     }
     .table-scroll{
         width: 100vw;
