@@ -11,32 +11,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <section class="top-bar">
+          <!-- Mobile Responsive -->
+          <div id="menubar_respon">
+            <a href="#">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </a>
+          </div>
       <!-- Left Header -->
       <div class="container-fluid">
         <div class="row">
           <div class="col">
             <div class="top-bar__left">
-              <!-- <button type="button" class="top-bar-xmark" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button> -->
               <a class="top-bar-xmark" href="#"><i class="fa-solid fa-xmark"></i></a>
-              <img class="top-bar__img" src="/webapp/img/logo.png" alt="logo">
-              <div> Hệ thống<strong>&nbsp;Quản lý người học</strong></div>
+              <img class="top-bar__img" src="./img/logo.png" alt="logo">
+              <div class="topbar-title"> Hệ thống<strong>&nbsp;Quản lý người học</strong></div>
             </div>
           </div>
           <!-- Right Header -->
           <div class="col">
           <ul class="top-bar__list-icon">
-            <li class="top-bar-icon-right"><a href="#"><i class="fa-regular fa-circle-question"></i></a></li>
-            <li class="top-bar-icon-right"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
-            <li class="top-bar-icon-right"><a href="#"><i class="fa-solid fa-border-none"></i></a></li>
-            <li class="top-bar-icon-right"><a href="#"><i class="fa-regular fa-circle-user"></i></a></li>
-            <li class="top-bar-icon-right"><a href="#"><i class="fa-regular fa-calendar-days"></i></a></li>
+            <li class="top-bar-icon-right"><a href="#"><em class="fa-regular fa-circle-question"></em></a></li>
+            <li class="top-bar-icon-right"><a href="#"><em class="fa-solid fa-gear"></em></a></li>
+            <li class="top-bar-icon-right"><a href="#"><em class="fa-solid fa-border-none"></em></a></li>
+            <li class="top-bar-icon-right"><a href="#"><em class="fa-regular fa-circle-user"></em></a></li>
+            <li class="top-bar-icon-right"><a href="#"><em class="fa-regular fa-calendar-days"></em></a></li>
           </ul>
         </div>
       </div>
@@ -52,7 +56,7 @@
       <input type="search" placeholder="Tìm kiếm chức năng"></input>
     </div>
   </div>
-    <div class="menu-wrapper">
+    <div  id="dropdown-submenu" class="menu-wrapper">
       <li class="menu-items">
         <ul> 
           <div class="menu-title">Mục yêu thích</div>
@@ -80,15 +84,16 @@
             <div> Hồ sơ người học </div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
-          <li class="menu-management hidden">
+          <li id="dropdown-btn" class="menu-management hidden">
             <div class="hover"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
-            <div id="dropdown-btn">
+            <div>
               QL điểm rèn luyện
               <ul class="sidebar-dropdown">
                 <li>Thiết lập ĐK phân loại</li>
                 <li>DS thí sinh nộp hồ sơ</li>
                 <li>Quản lý điểm rèn luyện</li>
-              </ul></div>
+              </ul>
+            </div>
             <div><i class="fa-solid fa-chevron-right"></i></div>
           </li>
           <li class="menu-management hidden">
@@ -121,14 +126,14 @@
           </div>
         </ul>
       </li>
-    </>
+    </div>
   </section>
 </aside>
 <!-- Table Content -->
 <article>
   <div class="sub-menu">Bảng điều khiển&nbsp; / &nbsp;...&nbsp; / &nbsp;Quản lý người học &nbsp;/ <strong>&nbsp;Danh sách trúng tuyển</strong>&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i></div>
   <div>
-    <div class="table-tile">
+    <div class="table-title">
       <h5>Danh sách trúng tuyển &nbsp;<a href="#"><i class="fa-regular fa-circle-question"></i></a></h5>
       <div class="table-search">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -151,7 +156,7 @@
           <li><a href="#"><span>Xuất danh sách</span> 
             &nbsp;<i class="fa-solid fa-download"></i></a>
           </li>
-          <li><a href="#"><span>	⋮ </span></a>
+          <li><a href="#"><span> ⋮ </span></a>
           </li>
         </div>
       </div>
@@ -179,6 +184,7 @@
         </div>
       </div>
     </div>
+    <div class="table-scroll">
   <table class="table table-hover">
     <thead class="table-col">
       <tr>
@@ -295,9 +301,10 @@
         <td>Lê Thị Hải Yến</td>
         <td>05/11/2000</td>
         <td>187762773</td>
-      </tr
+      </tr>
     </tbody>
   </table>
+</div>
 </div>
 </article>
 <script src="/index.js"></script>

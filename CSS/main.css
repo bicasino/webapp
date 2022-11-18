@@ -22,17 +22,6 @@ a:hover {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Mobile Styles */
-@media only screen and (max-width: 576px) {
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 577px) and (max-width: 991px) {
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-}
 
 /* Header Styles */
 .top-bar {
@@ -40,7 +29,6 @@ body {
   height: 51px;
   width: 100%;
   color: var(--white-color);
-  
 }
 .top-bar-xmark {
   height: 51px;
@@ -56,6 +44,9 @@ body {
 }
 .top-bar-xmark:hover {
   background-color: var(--icon-color);
+}
+#menubar_respon {
+  display: none;
 }
 /* .top-bar-calendar{
   height: 51px;
@@ -222,16 +213,16 @@ article {
 .sub-menu strong {
   color: var(--text-color);
 }
-.table-tile {
+.table-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 15px;
 }
-.table-tile h5 {
+.table-title h5 {
   color: var(--text-color);
 }
-.table-tile i {
+.table-title i {
   font-size: 15px;
 }
 .table-search {
