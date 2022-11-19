@@ -21,6 +21,9 @@ a:hover {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 /* Header Styles */
@@ -109,7 +112,7 @@ body {
 aside {
   float: left;
   width: 280px;
-  height: 100vh;
+  height: calc(100vh - 51px);
   background: var(--second-color);
 }
 aside ul {
@@ -163,7 +166,6 @@ hr {
   font-weight: bold;
   line-height: 50px;
   cursor: pointer;
-
 }
 .menu-management .hover {
   color: var(--icon-color);
@@ -171,7 +173,7 @@ hr {
   height: 51px;
   margin-right: 10px;
 }
-.menu-management:hover{
+.menu-management:hover {
   background-color: var(--third-color);
 }
 /* .menu-management:hover + */
@@ -201,6 +203,7 @@ article {
   display: grid;
   background-color: var(--white-color);
   color: var(--icon-color);
+  height: calc(100vh - 51px);
 }
 .sub-menu {
   font-size: 15px;
@@ -346,7 +349,7 @@ article {
   opacity: 0.2;
   font-size: 13px;
 }
-.table-row td{
+.table-row td {
   opacity: 0.8;
 }
 .table-row th {
@@ -358,25 +361,33 @@ article {
   font-weight: bold;
   opacity: 1;
 }
-.table-row .color{
+.table-row .color {
   border-left: 5px solid var(--yellow-color);
 }
-.table-row .red{
+.table-row .red {
   border-left: 5px solid red;
 }
-.table-row .green{
+.table-row .green {
   border-left: 5px solid green;
 }
 /* Scroll bar Table */
 
 /* Dropdown List */
-.dropdown:active .sidebar-dropdown{
+.dropdown:active .sidebar-dropdown {
   display: block;
 }
-.sidebar-dropdown{
+.sidebar-dropdown {
   display: none;
   font-weight: lighter;
 }
-.hidden .hover i{
+.hidden .hover i {
   display: none;
 }
+
+
+
+.btnAdd {
+  background-color: transparent;
+  cursor: pointer;
+}
+
