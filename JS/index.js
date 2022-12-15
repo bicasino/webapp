@@ -1,28 +1,38 @@
-let dropdownBtn = document.querySelector('#menubar_respon');
-let menuContent = document.querySelector('aside');
-let tableContent = document.querySelector('#table-respon');
-dropdownBtn.addEventListener('click',()=>{
+function searchfunc() {
+  let menusearch = document.querySelector("#menu-search");
+  let tableitems = Array.from(document.querySelectorAll(".table-scroll"));
+  menusearch.value = menusearch.value.toLowerCase();
+  tableitems.forEach(function (el) {
+    let text = el.innerText;
+    if (text.indexOf(menusearch.value) > -1) el.style.display = "";
+    else el.style.display = "none";
+  });
+}
 
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-      tableContent.style.display="";
-   } else {
-      menuContent.style.display="";
-      tableContent.style.display="block";
-   }
-})
-document.getElementById("menubar_respon").onclick = function() {
-    console.log(10+10)
-  };
+// responsive mobile
+let dropdownBtn = document.querySelector("#menubar_respon");
+let menuContent = document.querySelector("aside");
+let tableContent = document.querySelector("#table-respon");
+dropdownBtn.addEventListener("click", () => {
+  if (menuContent.style.display === "") {
+    menuContent.style.display = "block";
+    tableContent.style.display = "";
+  } else {
+    menuContent.style.display = "";
+    tableContent.style.display = "block";
+  }
+});
+
+
+// document.getElementById("dropdown-btn").onclick = function() {
+//     console.log(10+10)
+//   };
 
 // let arr = [1, 2, 3];
 
 // arr.push(4);
 
 // arr.pop();
-
-
-
 
 // arr.shift();
 
@@ -65,23 +75,17 @@ document.getElementById("menubar_respon").onclick = function() {
 
 // console.log(chainToSwitch(7));
 
+// const first = (second) => { third }
 
+// (params) => {
 
-const first = (second) => { third }
+// }
 
+// array.forEach(element => {
 
-(params) => {
-   
-}
+// });
 
+// for (let index = 0; index < array.length; index++) {
+//    const element = array[index];
 
-array.forEach(element => {
-   
-});
-
-for (let index = 0; index < array.length; index++) {
-   const element = array[index];
-   
-}
-
-
+// }

@@ -377,14 +377,12 @@ article {
   display: block;
 }
 .sidebar-dropdown {
-  display: none;
+  /* display: none; */
   font-weight: lighter;
 }
 .hidden .hover i {
   display: none;
 }
-
-
 
 .btnAdd {
   background-color: transparent;

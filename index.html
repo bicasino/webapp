@@ -120,11 +120,11 @@
                 <div>Hồ sơ người học</div>
                 <div><i class="fa-solid fa-chevron-right"></i></div>
               </li>
-              <li id="dropdown-btn" class="menu-management hidden">
+              <li class="menu-management hidden">
                 <div class="hover">
                   <i class="fa-solid fa-magnifying-glass-dollar"></i>
                 </div>
-                <div>
+                <div id="dropdown-btn">
                   QL điểm rèn luyện
                   <ul class="sidebar-dropdown">
                     <li>Thiết lập ĐK phân loại</li>
@@ -190,9 +190,10 @@
           <div class="table-search">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input
-              style="font-family: arial"
-              type="serch"
+              type="text"
+              id="menu-search"
               placeholder="Nhập từ khoá tìm kiếm"
+              onkeyup="searchfunc()"
             />
             <i class="fa-solid fa-chevron-down"></i>
           </div>

@@ -1,76 +1,76 @@
 /* Mobile Styles */
 @media only screen and (max-width: 576px) {
-        header{
+  header {
     height: auto;
     width: 100vw;
-    }
-    header .top-bar-xmark{
-
-        display: none;
-    }
-    header .topbar-title{
-        width: 100vw;
-        display: flex;
-    }
-    .col .top-bar__list-icon{
-        display: none;
-    }
-    #menubar_respon{
-        display: inline-block;
-        float: right;
-        font-size: 25px;
-        padding: 7px 10px;
-        margin-right: 10px;
-    }
-    #menubar_respon a{
-        color: var(--white-color);
-    }
-    aside{
-        width: 100%;
-    }
-    aside, i{
-        display: none;
-    }
-    .search-sidebar{
-        margin: 0 10px 0 10px;
-    }
-    .sub-menu{
-        display: none;
-    }
-    .table-title{
-        display: block;
-        padding: 10px;
-        margin: 0;
-    }
-    .table-search{
-        width: 95vw;
-    }
-    .text-icon{
-        display: none;
-    }
-    .table-btn{
-        display: block;
-    }
-    .table-scroll{
-        width: 99vw;
-        overflow: scroll;
-    }
-    .table{
-       margin: 0;
-    }
-    #table-respon{
-        display: none;
-        font-size: smaller;
-    }
-    #table-respon thead{
-        font-size: smaller;
-    }
+  }
+  header .top-bar-xmark {
+    display: none;
+  }
+  header .topbar-title {
+    width: 100vw;
+    display: flex;
+  }
+  .col .top-bar__list-icon {
+    display: none;
+  }
+  #menubar_respon {
+    display: inline-block;
+    float: right;
+    font-size: 25px;
+    padding: 7px 10px;
+    margin-right: 10px;
+  }
+  #menubar_respon a {
+    color: var(--white-color);
+  }
+  aside {
+    width: 100%;
+  }
+  aside,
+  i {
+    display: none;
+  }
+  .search-sidebar {
+    margin: 0 10px 0 10px;
+  }
+  .sub-menu {
+    display: none;
+  }
+  .table-title {
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+  .table-search {
+    width: 95vw;
+  }
+  .text-icon {
+    display: none;
+  }
+  .table-btn {
+    display: block;
+  }
+  .table-scroll {
+    width: 99vw;
+    overflow: scroll;
+  }
+  .table {
+    margin: 0;
+  }
+  #table-respon {
+    display: none;
+    font-size: smaller;
+  }
+  #table-respon thead {
+    font-size: smaller;
+  }
 }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 577px) and (max-width: 991px) {
-  }
-  
-  /* Desktop Styles */
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  }
+
+/* Tablet Styles */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
